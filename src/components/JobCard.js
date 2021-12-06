@@ -10,7 +10,7 @@ const JobCard = (props) => {
         <div className={style.infoJob}>
           <img
             alt={`${props.data.company}`}
-            src={require(`${props.data.logo}`).default}
+            src={require(`${"" + props.data.logo}`).default}
           ></img>
           <div style={{ width: `${20}rem` }}>
             <div className={style.job_heading}>
