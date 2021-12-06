@@ -1,0 +1,49 @@
+.filterfield {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px 0px rgb(93 165 164 / 20%);
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin: -26px auto 45px auto;
+  padding-bottom: 5px;
+  width: 80%;
+}
+.filterfield:hover {
+  box-shadow: 0px 10px 30px 0px rgb(93 165 164 / 20%);
+}
+.filterfield div {
+  display: flex;
+}
+.filterfield p {
+  margin: 20px;
+}
+.btnClear {
+  color: rgb(7, 110, 110);
+  cursor: pointer;
+}
+.empty {
+  visibility: hidden;
+}
+.del {
+  padding-left: 5px;
+  text-align: center;
+  align-items: center;
+  width: 20px;
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  background-color: #5aa6a2;
+  border-radius: 0px 5px 5px 0px;
+}
+.del:hover {
+  background-color: rgb(7, 110, 110);
+}
+.elementsFilter {
+  background-color: #eef6f8;
+  width: auto;
+  padding: 5px;
+  border-radius: 5px 0px 0px 5px;
+}

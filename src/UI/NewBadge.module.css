@@ -1,0 +1,12 @@
+.newbadge {
+  width: 50px;
+  border-radius: 10px;
+  background-color: hsl(180, 29%, 50%);
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+.empty {
+  display: none;
+  background-color: rebeccapurple;
+}

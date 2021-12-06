@@ -1,0 +1,53 @@
+.jobCard {
+  border-radius: 5px;
+
+  box-shadow: 0px 10px 15px 0px rgb(93 165 164 / 20%);
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  width: 80%;
+}
+.jobCard:hover {
+  box-shadow: 0px 10px 30px 0px rgb(93 165 164 / 20%);
+  border-left: 4px solid hsl(180, 29%, 50%);
+}
+.companyHead {
+  color: #5aa6a2;
+  font-weight: 600;
+}
+.positionHead {
+  cursor: pointer;
+}
+.positionHead:hover {
+  color: #5aa6a2;
+}
+.infoJob {
+  display: flex;
+  width: 50%;
+}
+.infoJob img {
+  margin: 20px;
+  height: 50%;
+}
+.filters {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: flex-end;
+}
+.filters p {
+  margin: 15px;
+}
+.job_heading {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.job_heading div {
+  margin-right: 10px;
+}

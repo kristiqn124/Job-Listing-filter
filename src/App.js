@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import FilterSort from "./components/FilterSort";
+import FilterCard from "./UI/FilterCard";
+
+import JobList from "./components/JobList";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [data, setData] = useState([]);
+  const [arrFilters, setArrFilters] = useState([]);
+
+  const getData = () => {
+    axios.get(`data.json`).then((res) => {
+      setData(res.data);
+    });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
+
+  const onClickFilterHandler = (element) => {
+    if (!arrFilters.includes(element)) {
+      setArrFilters((prev) => [...prev, element]);
+    }
+  };
+  const onClickDeleteHandler = (el) => {
+    setArrFilters((prev) => prev.filter((item) => item !== el));
+  };
+  const onClickDeleteAllHandler = (el) => {
+    setArrFilters([]);
+  };
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FilterCard />
+      <FilterSort
+        filterData={arrFilters}
+        deleteHandler={onClickDeleteHandler}
+        deleteAllHandler={onClickDeleteAllHandler}
+      ></FilterSort>
+      <JobList
+        filterList={arrFilters}
+        onChange={onClickFilterHandler}
+        data={data}
+      />
     </div>
   );
 }

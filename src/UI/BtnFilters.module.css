@@ -1,0 +1,14 @@
+.btnFilter {
+  background-color: #eef6f8;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 10px;
+  padding: 3px 6px;
+  color: hsl(180, 8%, 52%);
+}
+.btnFilter:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+}
