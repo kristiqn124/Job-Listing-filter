@@ -29,6 +29,7 @@ const JobCard = (props) => {
             </p>
           </div>
         </div>
+        <div className={style.divider}></div>
         <div className={style.filters}>
           <BtnFilters onChange={props.onChange} key={props.data.role}>
             {props.data.role}

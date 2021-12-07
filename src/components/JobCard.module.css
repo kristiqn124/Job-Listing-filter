@@ -51,3 +51,41 @@
 .job_heading div {
   margin-right: 10px;
 }
+.divider {
+  display: none;
+}
+@media only screen and (max-width: 700px) {
+  .jobCard {
+    padding-left: 0;
+    flex-direction: column;
+
+    align-items: unset;
+    padding-left: 30px;
+    margin-bottom: 80px;
+  }
+  .infoJob {
+    flex-direction: column;
+  }
+  .infoJob img {
+    margin-top: -20px;
+    margin-left: -10px;
+    height: 60px;
+    width: 60px;
+  }
+  .filters {
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  .divider {
+    display: block;
+
+    width: 90%;
+    border-width: thin;
+    border-style: solid;
+    border-color: rgb(201, 200, 198);
+    background-color: rgb(201, 200, 198);
+    margin: 10px 0;
+  }
+}
